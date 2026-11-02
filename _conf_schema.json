@@ -1,0 +1,53 @@
+{
+  "enable": {
+    "type": "bool",
+    "description": "启用 KOOK 语音点歌",
+    "default": true
+  },
+  "search_limit": {
+    "type": "int",
+    "description": "候选数量",
+    "hint": "点歌时列出的 B 站候选数量，1-10。",
+    "default": 5
+  },
+  "selection_timeout": {
+    "type": "int",
+    "description": "选歌等待秒数",
+    "hint": "列出候选后等待用户回复序号的时间。",
+    "default": 60
+  },
+  "max_duration_minutes": {
+    "type": "int",
+    "description": "单曲最长分钟数",
+    "hint": "超过这个时长的视频不会出现在候选里。",
+    "default": 30
+  },
+  "ffmpeg_path": {
+    "type": "string",
+    "description": "ffmpeg 可执行文件路径",
+    "hint": "留空则自动在 PATH 中查找。",
+    "default": ""
+  },
+  "default_bitrate": {
+    "type": "int",
+    "description": "默认推流码率（bps）",
+    "hint": "KOOK 在 voice/join 返回 bitrate 时以返回值为准。",
+    "default": 48000
+  },
+  "volume": {
+    "type": "float",
+    "description": "音量倍数",
+    "default": 0.8
+  },
+  "max_play_seconds": {
+    "type": "int",
+    "description": "单曲最长播放秒数（兜底）",
+    "hint": "防止 ffmpeg 卡死一直占着语音频道。",
+    "default": 1800
+  },
+  "announce": {
+    "type": "bool",
+    "description": "在文字频道播报开始和结束",
+    "default": true
+  }
+}

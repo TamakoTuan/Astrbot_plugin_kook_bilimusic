@@ -1,0 +1,7 @@
+name: Astrbot_plugin_kook_bilimusic
+display_name: KOOK B 站点歌
+desc: 独立 KOOK 语音频道 B 站点歌插件：搜索 B 站、机器人进入点歌人所在语音频道播放，支持选歌卡片、队列、进度和切歌。
+short_desc: KOOK B 站点歌，选歌卡片、队列、进度和切歌。
+version: 1.2.2
+astrbot_version: ">=4.26,<5"
+author: TamakoTuan
